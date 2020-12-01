@@ -1,0 +1,235 @@
+:root {
+    --clr-yellow: #FFF130;
+    --clr-gray: rgb(39, 39, 39);
+
+    --btn-transition: all 250ms ease-in-out 0s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* BASIC BUTTON STYLE =============================================== */
+
+.btn {
+    padding: .3rem .7rem;
+    background: var(--clr-yellow);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--clr-yellow);
+    transition: var(--btn-transition);
+    cursor: pointer;
+    /* border-radius: 100px; */
+}
+
+/* HEADER ================================================= */
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    position: fixed;
+    width: 100%;
+}
+
+header.active {
+    background-color: var(--clr-gray);
+    transition: all 300ms ease-in-out;
+}
+
+.logo {
+    font-family: 'Norican';
+    font-weight: lighter;
+    font-size: 1.8rem;
+}
+
+/* NAV =================================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav li {
+    padding: 0 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: .85rem;
+    font-weight: 500;
+    transition: var(--btn-transition);
+    display: block;
+}
+
+.nav-btn {
+    margin: 0 1.2rem;
+    transition: var(--btn-transition);
+    cursor: pointer;
+}
+
+.nav-btn a {
+    color: black;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+nav i {
+    margin: 0 1.2rem;
+    font-size: 1.05rem;
+    transition: var(--btn-transition);
+}
+
+/* HOVER EFFECTS */
+
+nav li a:hover {
+    color: var(--clr-yellow);
+}
+
+.nav-btn:hover {
+    background-color: white;
+    border: 2px solid white;
+}
+
+nav i:hover {
+    color: var(--clr-yellow);
+}
+
+/* LANDING PAGE ================================================= */
+
+.landing-page {
+    background-image: url(./Images/db-rack-dark.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.landing-page-text {
+    padding: 16rem 5rem;
+    color: white;
+    line-height: 1.75rem;
+}
+
+.landing-page-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.landing-page-text button {
+    margin-top: 1.5rem;
+}
+
+.landing-page-btn {
+    margin-right: 1.5rem;
+}
+
+.landing-page-border-btn {
+    color: white;
+    background: transparent;
+}
+
+/* HOVER EFFECTS */
+
+.landing-page-btn:hover {
+    background: transparent;
+    color: white;
+}
+
+.landing-page-border-btn:hover {
+    background: var(--clr-yellow);
+    color: black;
+}
+
+/* MY PLANS ================================================= */
+
+.my-plans {
+    background-color: var(--clr-gray);
+    color: white;
+}
+
+.my-plans h3 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+}
+
+.my-plans img {
+    width: 18rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+}
+
+.plan {
+    text-align: center;
+}
+
+.plan h5 {
+    font-size: 1rem;
+}
+
+.plan p {
+    margin-bottom: .75rem;
+    font-size: .9rem;
+}
+
+.plan button {
+    margin: 0 .75rem;
+    cursor: pointer;
+    transition: var(--btn-transition);
+}
+
+.plan-border-btn {
+    background: transparent;
+    color: white;
+}
+
+/* HOVER EFFECTS */
+
+.my-plans img:hover {
+    border: 2px solid white;
+}
+
+.plan-btn:hover {
+    background: transparent;
+    color: white;
+}
+
+.plan-border-btn:hover {
+    background: var(--clr-yellow);
+    color: black;
+}
+
+/* ONLINE COACHING ================================================= */
+
+/* ABOUT ME ================================================= */
+
+/* CONTACT ME ================================================= */
+
+/* FOOTER ================================================= */
+
+
+
