@@ -18,16 +18,31 @@
     <div class="landing-page">
         <header id="header">
             <h1 class="logo">Oliver Nygren</h1>
-            <nav>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">PLANS</a></li>
-                    <li><a href="#">ONLINE COACHING</a></li>
-                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#plans">PLANS</a></li>
+                    <li><a href="#coaching">ONLINE COACHING</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
                 </ul>
-                <button class="btn nav-btn"><a href="#">CONTACT</a></button>
+                <button class="btn nav-btn"><a href="#contact">CONTACT</a></button>
                 <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </nav>
+    
+            <nav class="mobile-nav display-none">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#plans">PLANS</a></li>
+                    <li><a href="#coaching">ONLINE COACHING</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
+                    <button class="btn mobile-nav-btn"><a href="#contact">CONTACT</a></button>
+                </ul>
+            </nav>     
         </header>
         <div class="landing-page-text">
             <h2>TRAINING AND NUTRITION MADE SIMPLE.</h2>
@@ -38,7 +53,7 @@
         </div>
     </div>
 
-    <div class="my-plans">
+    <div class="my-plans" id="plans">
         <h3>MY PLANS</h3>
         <div class="plan-container">
             <div class="plan">
@@ -65,17 +80,18 @@
         </div>
     </div>
 
-    <div class="online-coaching">
+    <div class="online-coaching" id="coaching">
         <div class="online-coaching-text">
             <h3>ONLINE COACHING</h3>
-            <p>Text</p>
-            <p>Text</p>
-            <p>Text</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores optio expedita quod exercitationem, rerum dignissimos dolor inventore numquam, corrupti accusamus amet, velit molestias quo similique minima eaque nulla reiciendis vero!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores optio expedita quod exercitationem, rerum dignissimos dolor inventore numquam, corrupti accusamus amet, velit molestias quo similique minima eaque nulla reiciendis vero!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores optio expedita quod exercitationem, rerum dignissimos dolor inventore numquam, corrupti accusamus amet, velit molestias quo similique minima eaque nulla reiciendis vero!</p>
+            <button class="btn online-coaching-btn">GET STARTED</button>
         </div>
-        <img src="#" alt="">
+        <img src="./Images/yellow-splash.png" alt="">
     </div>
 
-    <div class="about-me">
+    <div class="about-me" id="about-me">
         <img src="./Images/me.jpg" alt="">
         <div class="about-me-text">
             <h3>ABOUT ME</h3>
@@ -86,7 +102,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <h3>CONTACT ME</h3>
         <form>
             <input type="email" name="email" id="email" placeholder="E-Mail Address">
@@ -97,36 +113,41 @@
     </div>
 
     <footer>
-        <div class="footer-faq">
-            <h5>FAQ</h5>
-            <ul>
-                <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-            </ul>
-        </div>
-        <div class="footer-support">
-            <h5>SUPPORT</h5>
-            <ul>
-                <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-            </ul>
-        </div>
-        <div class="footer-socials">
-            <h5>SOCIAL LINKS</h5>
-            <ul>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-facebook"></i>
-            </ul>
+        <img src="./Images/v-shape-4k.png" alt="">
+        <div class="footer-text-container">
+            <div class="footer-faq">
+                <h5>FAQ</h5>
+                <ul>
+                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
+                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
+                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
+                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h5>SUPPORT</h5>
+                <ul>
+                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
+                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
+                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
+                    <li><a href='https://pngtree.com/so/yellow-watercolor'>yellow watercolor png from pngtree.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h5>SOCIAL LINKS</h5>
+                <ul>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-facebook"></i>
+                </ul>
+            </div>
         </div>
     </footer>
+
     <div class="copyright-text">
         <p>Copyright © | 2020 - Oliver Nygren. All rights reserved</p>
     </div>
+
 </body>
 
 </html>

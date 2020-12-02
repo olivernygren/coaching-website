@@ -10,3 +10,10 @@ window.onscroll = function() {
         header.classList.remove('active');
     }
 }
+
+const menuIcon = document.querySelector('.hamburger-menu');
+const navBar = document.querySelector('.mobile-nav');
+
+menuIcon.addEventListener('click', () => {
+    navBar.classList.toggle('change');
+});

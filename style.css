@@ -9,11 +9,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* BASIC BUTTON STYLE =============================================== */
@@ -26,7 +28,6 @@ body {
     border: 2px solid var(--clr-yellow);
     transition: var(--btn-transition);
     cursor: pointer;
-    /* border-radius: 100px; */
 }
 
 /* HEADER ================================================= */
@@ -53,22 +54,22 @@ header.active {
 
 /* NAV =================================================== */
 
-nav {
+.desktop-nav {
     display: flex;
     align-items: center;
 }
 
-nav ul {
+.desktop-nav ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-nav li {
+.desktop-nav li {
     padding: 0 1.2rem;
 }
 
-nav a {
+.desktop-nav a {
     text-decoration: none;
     color: white;
     font-size: .85rem;
@@ -89,7 +90,7 @@ nav a {
     font-weight: 500;
 }
 
-nav i {
+.desktop-nav i {
     margin: 0 1.2rem;
     font-size: 1.05rem;
     transition: var(--btn-transition);
@@ -97,7 +98,7 @@ nav i {
 
 /* HOVER EFFECTS */
 
-nav li a:hover {
+.desktop-nav li a:hover {
     color: var(--clr-yellow);
 }
 
@@ -106,9 +107,118 @@ nav li a:hover {
     border: 2px solid white;
 }
 
-nav i:hover {
+.desktop-nav i:hover {
     color: var(--clr-yellow);
 }
+
+/* MOBILE-NAV ============================================== */
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 20px;
+    right: 3rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 800ms;
+}
+
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.mobile-nav {
+    width: 300px;
+    height: 100vh;
+    background-color: var(--clr-gray);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    transition: right 800ms cubic-bezier(1, 0, 0, 1);
+    box-shadow: 0px 0px 5px black;
+}
+
+.change {
+    right: 0;
+}
+
+.mobile-nav ul {
+    text-align: right;
+}
+
+.mobile-nav li {
+    list-style: none;
+    margin: 1.5rem;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.mobile-nav-btn {
+    margin-right: 1.5rem;
+}
+
+.mobile-nav-btn a {
+    color: var(--clr-gray);
+}
+
+/* .mobile-nav {
+    display: flex;
+    background-color: black;
+}
+
+.hamb-icon, .cross-icon, .fa-shopping-cart {
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0.8rem;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-nav-btn {
+    margin-top: 2rem;
+}
+
+.mobile-nav-btn a {
+    color: black;
+} */
 
 /* LANDING PAGE ================================================= */
 
@@ -130,6 +240,7 @@ nav i:hover {
 .landing-page-text h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
+    line-height: 3rem;
 }
 
 .landing-page-text button {
@@ -225,11 +336,196 @@ nav i:hover {
 
 /* ONLINE COACHING ================================================= */
 
+.online-coaching {
+    background-color: var(--clr-yellow);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+}
+
+.online-coaching img {
+    height: 18rem;
+}
+
+.online-coaching-text {
+    padding: 3rem 0;
+}
+
+.online-coaching-text h3 {
+    padding-bottom: 2rem;
+    font-size: 1.9rem;
+}
+
+.online-coaching-text p {
+    line-height: 1.75rem;
+}
+
+.online-coaching-btn {
+    background-color: var(--clr-gray);
+    color: white;
+    border: 2px solid var(--clr-gray);
+    margin-top: 1.5rem;
+}
+
+/* HOVER EFFECTS */
+
+.online-coaching-btn:hover {
+    background-color: transparent;
+    color: var(--clr-gray);
+}
+
 /* ABOUT ME ================================================= */
+
+.about-me {
+    background-color: var(--clr-gray);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 5rem;
+}
+
+.about-me img {
+    height: 22rem;
+    border: 4px solid var(--clr-yellow);
+}
+
+.about-me-text {
+    text-align: right;
+    padding: 0 2rem;
+}
+
+.about-me h3 {
+    padding-bottom: 2rem;
+    font-size: 1.9rem;
+}
+
+.about-me h5 {
+    padding: .75rem 0;
+    font-size: 1.25rem;
+}
 
 /* CONTACT ME ================================================= */
 
+.contact {
+    background-color: var(--clr-yellow);
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h3 {
+    padding-bottom: 3rem;
+    font-size: 1.9rem;
+}
+
+.contact input {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins';
+}
+
+.contact form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#message {
+    padding-bottom: 10rem;
+}
+
+.submit-btn {
+    background-color: var(--clr-gray);
+    color: white;
+    border: 2px solid var(--clr-gray);
+    width: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HOVER EFFECTS */
+
+.submit-btn:hover {
+    background-color: transparent;
+    color: var(--clr-gray);
+}
+
 /* FOOTER ================================================= */
 
+footer {
+    background-color: var(--clr-gray);
+    color: white;
+}
+
+footer img {
+    width: 100vw;
+}
+
+.footer-text-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 6rem;
+}
+
+footer h5 {
+    font-size: 1.1rem;
+    padding-bottom: 0.75rem;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5rem;
+}
+
+/* .footer-socials {
+    display: flex;
+    flex-direction: column;
+} */
+
+.footer-socials i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: 100px;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.fa-youtube {
+    background: red;
+}
+
+.fa-facebook {
+    background: rgb(66, 69, 207);
+}
+
+.copyright-text {
+    background-color: var(--clr-gray);
+    text-align: center;
+    padding: 1rem;
+    color: rgb(145, 145, 145);
+    font-size: .75rem;
+}
+
+/* RE-USABLE CLASSES ============================================ */
+
+.display-none {
+    display: none;
+}
 
 
