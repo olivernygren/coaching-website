@@ -281,10 +281,12 @@ header.active {
 
 .plan {
     text-align: center;
+    padding: 0 1rem;
 }
 
 .plan h5 {
     font-size: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .plan p {

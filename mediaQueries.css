@@ -21,6 +21,7 @@
 
     .plan {
         margin-bottom: 2rem;
+        padding: 0 2rem;
     }
 
     .online-coaching img {
@@ -88,6 +89,10 @@
     .landing-page-text {
         padding: 10rem 2rem;
         text-align: center;
+    }
+
+    .plan {
+        padding: 0 1rem;
     }
 
     .online-coaching h3 {
