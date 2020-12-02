@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    header {
+        padding: 1rem 3rem
+    }
+
+    .landing-page-text {
+        padding: 12rem 3rem
+    }
+
+    .landing-page-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .plan-container {
+        flex-direction: column;
+    }
+
+    .plan {
+        margin-bottom: 2rem;
+    }
+
+    .online-coaching img {
+        display: none;
+    }
+
+    .my-plans img:hover {
+        border: none
+    }
+
+    .about-me {
+        padding: 4rem 3rem;
+        align-items: center;
+    }
+
+    .about-me-text {
+        padding: 0;
+        padding-left: 1rem;
+    }
+
+    .about-me img {
+        height: 16rem;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    footer {
+        padding: 2rem 2rem;
+    }
+
+    .footer-text-container {
+        padding-bottom: 1rem;
+    }
+
+    .footer-socials i {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .contact form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 440px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .hamburger-menu {
+        right: 2rem;
+    }
+
+    .landing-page-text h2 {
+        font-size: 2rem;
+    }
+
+    .landing-page-text {
+        padding: 10rem 2rem;
+        text-align: center;
+    }
+
+    .online-coaching h3 {
+        white-space: nowrap;
+    }
+
+    .online-coaching {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .about-me {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+    }
+
+    .about-me-text {
+        text-align: center;
+        padding: 0;
+        padding-top: 1rem;
+    }
+
+    .about-me-text h3 {
+        padding: 0 1rem;
+    }
+
+    .about-me-text h5 {
+        color: rgb(226, 226, 226);
+    }
+
+
+
+
+    .footer-text-container {
+        flex-direction: column;
+    }
+
+    .footer-faq, .footer-support {
+        padding-bottom: 1.5rem;
+        line-height: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}

@@ -11,9 +11,28 @@ window.onscroll = function() {
     }
 }
 
+const desktopNav = document.querySelector('.desktop-nav');
 const menuIcon = document.querySelector('.hamburger-menu');
-const navBar = document.querySelector('.mobile-nav');
+const mobileNav = document.querySelector('.mobile-nav');
+const windowWidth = window.innerWidth;
 
 menuIcon.addEventListener('click', () => {
-    navBar.classList.toggle('change');
+    mobileNav.classList.toggle('change');
+
+    // if (desktopNav.classList.contains('display-none')) {
+
+    //     desktopNav.classList.remove('display-none');
+    //     mobileNav.classList.add('display-none');
+    
+    // } else {
+    
+    //     desktopNav.classList.add('display-none');
+    //     mobileNav.classList.remove('display-none');
+    
+    // }
+
 });
+
+
+
+
