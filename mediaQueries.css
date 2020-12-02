@@ -77,6 +77,10 @@
         right: 2rem;
     }
 
+    .landing-page {
+        background-image: url(./Images/mobile-db-bg.png);
+    }
+
     .landing-page-text h2 {
         font-size: 2rem;
     }
