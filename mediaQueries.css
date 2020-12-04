@@ -1,3 +1,14 @@
+@media (max-width: 975px) {
+    .plan-container {
+        flex-direction: column;
+        padding: 0 10rem;
+    }
+
+    .plan button {
+        margin-bottom: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .desktop-nav {
         display: none;
@@ -21,6 +32,7 @@
 
     .plan-container {
         flex-direction: column;
+        padding: 0 2rem;
     }
 
     .plan {

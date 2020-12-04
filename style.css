@@ -276,6 +276,7 @@ header.active {
 .plan-container {
     display: flex;
     justify-content: space-evenly;
+    padding: 0 2rem;
     padding-bottom: 5rem;
 }
 
